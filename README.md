@@ -2,6 +2,24 @@
 
 Quick overview of the Characterization toolkit for Active Flow Sculpting experiments.
 
+About
+-----
+
+This repository provides the Characterization toolkit for Active Flow Sculpting experiments. It offers a Streamlit-based interactive application to compute Mixing Coefficient, Moment of Inertia (MoI), Fluid Dislocation/Displacement, and Uniformity analyses from microscope-derived particle images exported by the ActiSculpt pipeline. The app supports batch processing, interactive parameter tuning, and exports results in JSON and image formats for downstream analysis.
+
+How to use the app
+------------------
+
+- Double-click the appropriate launcher for your OS (`run_app.bat` on Windows, `run_app.command` or `run_app.sh` on macOS/Linux), or run the app manually:
+
+```bash
+streamlit run GUI.py
+```
+
+- In the sidebar select your dataset JSON and the folder containing the image files.
+- Choose the analysis type (Mixing, Uniformity, MoI, Fluid Dislocation), set amplitudes and other parameters, and run the analysis.
+- Use the interactive plots and summaries to inspect results, then export consolidated `Results.json` and any per-particle cropped images as needed.
+
 What it does: A Streamlit-based interactive application to compute Mixing Coefficient,
 Moment of Inertia (MoI), Fluid Dislocation / Displacement, and Uniformity analyses from
 microscope-derived particle images exported by the ActiSculpt pipeline.
@@ -44,6 +62,10 @@ Troubleshooting
 
 Author
 - Mehmet Akif Sahin — akif.sahin@tum.de
+
+Acknowledgments
+
+The interactive GUI and visualization components were developed with assistance from GitHub Copilot, an AI-powered code completion tool. Generative AI helped accelerate interface scaffolding and iterative UI improvements.
 
 License
 - MIT
